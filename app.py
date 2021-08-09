@@ -96,4 +96,25 @@ def less_than_five(nums):
     
     return list_nums
 
-run_less_than_five()
+#run_less_than_five()
+
+
+
+
+#6 Get user name and age and print year they turn 100
+import datetime
+
+def run_calculate_hundred():
+    user_name = input("What is your name?")
+    user_age = int(input("What is your age?"))
+    year = calculate_hundred(user_age)
+    print(user_name + ", you turn 100 in the year " + str(year))
+
+
+def calculate_hundred(age):
+    current_year = datetime.datetime.now().year
+    hundred_year = 100 - age + current_year
+    
+    return hundred_year
+
+run_calculate_hundred()
