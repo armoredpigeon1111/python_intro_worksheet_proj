@@ -37,4 +37,18 @@ def random_number(min, max):
     return num
 
 
-run_random_number()
+#run_random_number()
+
+
+#3 Write the reversal of a word
+
+def run_reverse_word():
+    user_word = input("Enter a word to reverse it: ")
+    reversed_word = reverse_word(user_word)
+    print(reversed_word)
+
+def reverse_word(word):
+    reversed_word = word[::-1]
+    return reversed_word
+
+run_reverse_word()
