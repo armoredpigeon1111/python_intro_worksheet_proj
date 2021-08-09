@@ -140,4 +140,32 @@ def find_common_elements(list_a, list_b):
         
     return common_elements
 
-run_find_common_elements()
+#run_find_common_elements()
+
+
+
+
+#8 Find if two words are anagrams
+
+def run_find_anagram():
+    first_word = input("Please enter a word: ")
+    second_word = input("Please enter a second word to see if it is an anagram: ")
+    is_anagram = find_anagram(first_word, second_word)
+    
+    if(is_anagram):
+        print(first_word + " is an anagram of " + second_word)
+    else:
+        print(first_word + " is NOT an anagram of " + second_word)
+
+
+def find_anagram(word1, word2):
+    if(sorted(word1) == sorted(word2)):
+        return True
+    else:
+        return False
+
+
+run_find_anagram()
+
+
+
