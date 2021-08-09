@@ -55,7 +55,7 @@ def reverse_word(word):
 
 
 
-#4 Print eveery number frow 100 to 1 if divisible by 4 print banana, 7 print flamingo, 4 and 7 Flamingo-Banana
+#4 Print every number frow 100 to 1 if divisible by 4 print banana, 7 print flamingo, 4 and 7 Flamingo-Banana
 
 def run_flamingo_banana():
     start_num = 100
@@ -76,4 +76,24 @@ def flamingo_banana(num):
             print(num)
             num -= 1
 
-run_flamingo_banana()
+#run_flamingo_banana()
+
+
+
+
+#5 Take a list of numbers and make a new list of numbers less than 5
+
+def run_less_than_five():
+    starting_nums = [1, 2, 3, 7, 8, 9, 45, 134, 43, 2, 3, 1, 6, 7, 5, 4]
+    nums_less_than_five = less_than_five(starting_nums)
+    print(nums_less_than_five)
+
+def less_than_five(nums):
+    list_nums = []
+    for num in nums:
+        if num < 5 and not num in list_nums:
+            list_nums.append(num)
+    
+    return list_nums
+
+run_less_than_five()
