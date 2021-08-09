@@ -165,7 +165,28 @@ def find_anagram(word1, word2):
         return False
 
 
-run_find_anagram()
+#run_find_anagram()
 
+
+
+
+
+#9 Reverse each word but keep order of phrase
+
+def run_reverse_word():
+    phrase = input("Enter a phrase: ")
+    reverse_phrase = reverse_word(phrase)
+    print(reverse_phrase)
+
+def reverse_word(phrase):
+    split_phrase = phrase.split()
+    rev_phrase = ""
+
+    for word in split_phrase:
+        rev_phrase += (word[::-1]) + " "
+    
+    return rev_phrase
+
+run_reverse_word()
 
 
