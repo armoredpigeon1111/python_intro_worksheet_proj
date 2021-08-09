@@ -51,4 +51,29 @@ def reverse_word(word):
     reversed_word = word[::-1]
     return reversed_word
 
-run_reverse_word()
+#run_reverse_word()
+
+
+
+#4 Print eveery number frow 100 to 1 if divisible by 4 print banana, 7 print flamingo, 4 and 7 Flamingo-Banana
+
+def run_flamingo_banana():
+    start_num = 100
+    flamingo_banana(start_num)
+
+def flamingo_banana(num):
+    while num > 0:
+        if num % 4 == 0 and num % 7 == 0:
+            print("Flamingo-Banana")
+            num -= 1
+        elif num % 4 == 0:
+            print("Banana")
+            num -= 1
+        elif num % 7 == 0:
+            print("Flamingo")
+            num -= 1
+        else:
+            print(num)
+            num -= 1
+
+run_flamingo_banana()
